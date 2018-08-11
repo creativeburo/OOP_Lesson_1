@@ -7,18 +7,26 @@ namespace OOP_Lesson_1
         static void Main(string[] args)
         {
 
-            int x1 = 1;
-            int y1 = 3;
-            char symb1 = '*';
+
+            Point p1 = new Point();
+
+            p1.x = 2;
+            p1.y = 2;
+            p1.symb = '*';
 
 
-            int x2 = 4;
-            int y2 = 5;
-            char symb2 = '#';
+            Point p2 = new Point();
+
+            p2.x = 5;
+            p2.y = 5;
+            p2.symb = '#';
 
 
-            Draw(x1, y1, symb1);
-            Draw(x2, y2, symb2);
+
+
+
+            p1.Draw(p1.x, p1.y, p1.symb);
+            p2.Draw(p2.x, p2.y, p2.symb);
 
 
             Console.ReadLine();
